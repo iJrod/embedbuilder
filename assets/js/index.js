@@ -14,7 +14,7 @@ var activeFields, colNum = 1, num = 0,
         embed: {
             title: "Hello ~~people~~ world :wave:",
             description: "You can use [links](https://discord.com) or emojis :smile: 😎\n```\nAnd also code blocks\n```",
-            color: 4321431,
+            color: 16711816,
             timestamp: new Date().toISOString(),
             url: "https://discord.com",
             author: {
@@ -605,7 +605,7 @@ window.onload = () => {
     });
 
     let picker = new CP(document.querySelector('.picker'), state = { parent: document.querySelector('.cTop') });
-    picker.fire('change', toRGB('#41f097'));
+    picker.fire('change', toRGB('#ff0088'));
 
     let colRight = document.querySelector('.colRight'), removePicker = () => colRight.classList.remove('picking');
     document.querySelector('.colBack').addEventListener('click', e => {
