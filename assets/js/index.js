@@ -454,6 +454,7 @@ window.onload = () => {
             } else {
                 json.embed ??= {};
                 switch (el.target) {
+                    case webhook: json.webhook = v; break;
                     case content: json.content = v; break;
                     case title: json.embed.title = v; break;
                     case authorName: json.embed.author ??= {}, json.embed.author.name = v; break;

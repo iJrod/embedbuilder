@@ -35,6 +35,24 @@ body {
     grid-template-columns: 45% 55%;
 }
 
+body>.banner { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: #ff0088; 
+    width: 100%; 
+    z-index: 100;
+    display: grid;
+    flex: 0 0 auto;
+  }
+
+ body>.banner>.bContent { 
+    margin: 0 auto; 
+    font-size: 10pt;
+    padding: 2px;
+    font-weight: bold;
+  }
+
 .top pre>code .hltChars {
     color: #b96a97;
     color: #b36391;
@@ -251,7 +269,7 @@ img[alt] {
     cursor: pointer;
     user-select: none;
     flex: 0 0 auto;
-    z-index: 1;
+    z-index: 2;
 }
 
 .timeText {
@@ -1530,6 +1548,20 @@ body {
     border-radius: 100%;
     background: #27282e;
     width: 35px;
+    height: 35px;
+    transition: .5s ease;
+}
+
+.send {
+    left: 200px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+    transform: translate(0, -5px);
+    padding: 8.5px;
+    border-radius: 10%;
+    background: #27282e;
+    width: auto;
     height: 35px;
     transition: .5s ease;
 }
